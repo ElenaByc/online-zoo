@@ -10,17 +10,29 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url("../assets/fonts/Roboto-Thin.ttf");
+    font-weight: 100;
+}
+
 :root {
     --color-black: #000000;
+    --color-black-blue: #333B41;
     --color-white: #ffffff;
-    --color-gray-light: #E5E5E5;
+    --color-light: #E5E5E5;
+    --color-gray-light: #F1F3F2;
+    --color-gray: #BDBDBD;
     --color-orange1: #F9804B;
     --color-orange2: #FE9013;
+    --color-orange-dark: #E47209;
+    --color-green: #4B9200;
+    --color-red: #D31414;
 }
 
 html {
     scroll-behavior: smooth;
-    background-color: var(--color-gray-light);
+    background-color: var(--color-light);
 }
 
 *,
@@ -67,10 +79,26 @@ h5 {
     padding: 14px 220px;
 }
 
-.section1 h2 {
-    font-size: 26px;
-    line-height: 40px;
-    color: var(--color-black);
+.button {
+    width: 298px;
+    background: linear-gradient(113.96deg, var(--color-orange1) 1.49%, var(--color-orange2) 101.44%);
+    padding: 16px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.button:hover {
+    background: var(--color-orange-dark);
+}
+
+.button:active {
+    background: var(--color-green);
+    transform: scale(0.98);
 }
 
 /* ---------- Header ---------- */
@@ -123,7 +151,7 @@ h5 {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    column-gap: 35px;
+    column-gap: 58px;
     font-family: 'Roboto Bold';
     font-weight: 500;
     font-size: 16px;
@@ -133,11 +161,6 @@ h5 {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.nav__active,
-.nav__link {
-    margin-right: 23px;
 }
 
 .nav__link {
@@ -179,7 +202,7 @@ h5 {
     width: 98%;
 }
 
-.header__nav-list .nav__active {
+.nav__active {
     font-weight: 600;
     background: linear-gradient(113.96deg, var(--color-orange1) 1.49%, var(--color-orange2) 101.44%);
     -webkit-background-clip: text;
@@ -194,7 +217,7 @@ h5 {
     color: var(--color-white);
     transition: all 0.3s ease-in-out;
     padding-right: 1px;
-    margin-left: 352px;
+    margin-left: 375px;
 }
 
 .header__design:hover {
@@ -203,4 +226,202 @@ h5 {
 
 .header__burger-btn {
     display: none;
+}
+
+/* ---------- Watch your favorite animal online ---------- */
+
+/* .watch {
+    height: 700px;
+} */
+
+.watch h2 {
+    font-size: 26px;
+    line-height: 40px;
+    color: var(--color-black);
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 41px 220px 50px;
+}
+
+.footer__logo-subscribe {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.footer__logo {
+    border-radius: 2px;
+    border: 1px solid var(--color-white);
+    padding: 1px 4px 5px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer__logo h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 19.0145px;
+    line-height: 22px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer__logo img {
+    position: absolute;
+    left: 9px;
+    top: 21px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer__logo:hover {
+    border: 1px solid var(--color-orange2);
+}
+
+.footer__logo:hover h3 {
+    color: var(--color-orange2)
+}
+
+.footer__logo:hover img {
+    filter: invert(52%) sepia(99%) saturate(476%) hue-rotate(350deg) brightness(101%) contrast(99%);
+}
+
+.footer__subscribe h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 13px;
+}
+
+.subscribe__form input[type="email"] {
+    border-radius: 2px;
+    border: solid 0.7px var(--color-orange2);
+    appearance: none;
+    outline: none;
+    background: transparent;
+    width: 228px;
+    padding: 9px 10px;
+    margin-right: 6px;
+    line-height: 22px;
+    color: var(--color-gray);
+}
+
+.subscribe__form input[type="email"]:valid {
+    border: solid 0.7px var(--color-green);
+}
+
+.subscribe__form input[type="email"]:focus:invalid {
+    border: solid 0.7px var(--color-red);
+    color: var(--color-red);
+}
+
+.subscribe__form input[type="submit"] {
+    width: 129px;
+    padding: 9px 38px;
+    line-height: 22px;
+    border: 1px solid var(--color-black-blue);
+    border-radius: 5px;
+    background-color: var(--color-gray-light);
+    cursor: pointer;
+}
+
+.subscribe__form input[type="submit"]:hover {
+    background: linear-gradient(113.96deg, var(--color-orange1) 1.49%, var(--color-orange2) 101.44%);
+    color: var(--color-white);
+}
+
+.subscribe__form input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+.subscribe__form input[type="email"]:valid+input[type="submit"] {
+    color: var(--color-green);
+    border: 1px solid var(--color-green);
+}
+
+.subscribe__form input[type="email"]:focus:invalid+input[type="submit"] {
+    color: var(--color-red);
+    border: 1px solid var(--color-red);
+}
+
+.subscribe__form input[type="email"]:valid+input[type="submit"]:hover,
+.subscribe__form input[type="email"]:invalid+input[type="submit"]:hover {
+    color: var(--color-white);
+    border: 1px solid var(--color-black-blue);
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 44px;
+}
+
+.footer__social-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    list-style: none;
+    margin-right: 116px;
+}
+
+.social__link {
+    display: flex;
+    column-gap: 12px;
+    align-items: flex-end;
+}
+
+.social__circle {
+    width: 26px;
+    height: 26px;
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__social-list span {
+    line-height: 140%;
+}
+
+.social__link:hover {
+    color: var(--color-orange2);
+}
+
+.social__link:hover img {
+    filter: invert(52%) sepia(99%) saturate(476%) hue-rotate(350deg) brightness(101%) contrast(99%);
+}
+
+.footer__nav-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 58px;
+    font-family: 'Roboto Bold';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color-white);
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__copyright {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-family: 'Roboto Thin';
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--color-gray);
 }
