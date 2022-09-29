@@ -1,0 +1,35 @@
+.panda {
+    background-image: url(../assets/images/panda_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center -4px;
+    background-size: 1600px 390px;
+    height: 386px;
+}
+
+.donate {
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    height: 1482px;
+    padding: 40px 220px;
+}
+
+.donate h2 {
+    font-size: 36px;
+    line-height: 130%;
+    color: var(--color-white);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.donate p {
+    font-weight: 500;
+    line-height: 140%;
+    color: var(--color-white);
+    letter-spacing: 0.055px;
+    margin-bottom: 45px;
+}
+
+.donate h3 {
+    font-size: 36px;
+    line-height: 130%;
+    color: var(--color-orange2);
+}
