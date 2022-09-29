@@ -230,14 +230,40 @@ h5 {
 
 /* ---------- Watch your favorite animal online ---------- */
 
-/* .watch {
+.watch {
     height: 700px;
-} */
+}
 
 .watch h2 {
     font-size: 26px;
     line-height: 40px;
     color: var(--color-black);
+}
+
+/* ---------- The Backstage ---------- */
+
+.backstage {
+    display: flex;
+    column-gap: 85px;
+    padding: 140px 220px;
+    background-image: url(../assets/images/flower_foto1.png);
+    background-position: right 15px;
+    background-repeat: no-repeat;
+    background-size: 206px 605px;
+    color: var(--color-black-blue);
+}
+
+.backstage h2 {
+    font-size: 48px;
+    line-height: 120%;
+    margin-bottom: 21px;
+}
+
+.backstage h3 {
+    font-size: 24px;
+    line-height: 120%;
+    margin-top: 55px;
+    margin-bottom: 36px;
 }
 
 /* ---------- Footer ---------- */
