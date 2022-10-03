@@ -421,8 +421,16 @@ h5 {
     color: var(--color-orange2);
 }
 
-.social__link:hover img {
-    filter: invert(52%) sepia(99%) saturate(476%) hue-rotate(350deg) brightness(101%) contrast(99%);
+.social__link:hover .social__circle {
+    background: var(--color-orange2);
+}
+
+.social__link:active {
+    color: var(--color-green);
+}
+
+.social__link:active .social__circle {
+    background: var(--color-green);
 }
 
 .footer__nav-list {
