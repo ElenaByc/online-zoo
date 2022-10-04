@@ -22,7 +22,9 @@
     --color-white: #ffffff;
     --color-light: #E5E5E5;
     --color-gray-light: #F1F3F2;
+    --color-gray-dark: #404950;
     --color-gray: #BDBDBD;
+    --color-gray2: #72828E;
     --color-orange1: #F9804B;
     --color-orange2: #FE9013;
     --color-orange-dark: #E47209;
@@ -358,11 +360,13 @@ h5 {
 }
 
 .subscribe__form input[type="submit"]:hover {
-    background: linear-gradient(113.96deg, var(--color-orange1) 1.49%, var(--color-orange2) 101.44%);
+    /* background: linear-gradient(113.96deg, var(--color-orange1) 1.49%, var(--color-orange2) 101.44%); */
+    background-color: var(--color-orange-dark);
     color: var(--color-white);
 }
 
 .subscribe__form input[type="submit"]:active {
+    background-color: var(--color-green);
     transform: scale(0.98);
 }
 
