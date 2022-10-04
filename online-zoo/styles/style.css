@@ -25,6 +25,7 @@
     --color-gray-dark: #404950;
     --color-gray: #BDBDBD;
     --color-gray2: #72828E;
+    --color-yellow: #FFEE2E;
     --color-orange1: #F9804B;
     --color-orange2: #FE9013;
     --color-orange-dark: #E47209;
@@ -82,6 +83,7 @@ h5 {
 }
 
 .button {
+    display: block;
     width: 298px;
     background: linear-gradient(113.96deg, var(--color-orange1) 1.49%, var(--color-orange2) 101.44%);
     padding: 16px;
