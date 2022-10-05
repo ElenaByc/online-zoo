@@ -41,6 +41,7 @@
 
         <main class="main">
             <section class="section panda">
+                <h2 hidden>Panda</h2>
             </section>
             <section class="section donate">
                 <h2 class="donate__tilte">THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h2>
@@ -116,7 +117,25 @@
                                 <span class="amount__value">25</span>
                             </label>
                         </div>
+                        <form class="amount__form">
+                            <input type="number" min="1" max="9999" step="1" placeholder="Another amount"
+                                class="amount__input" required>
+                            <div class="dollar-icon"></div>
+                            <div class="monthly">
+                                <label>
+                                    <input type="radio" id="monthly" name="monthly" value="monthly">
+                                    Monthly
+                                </label>
+                                <label>
+                                    <input type="radio" id="once" name="monthly" value="once" checked>
+                                    Once
+                                </label>
+                            </div>
+                            <input type="submit" class="button rounded" value="Feed a friend now">
+                            <p>Share with your friends on social networks</p>
+                        </form>
                     </div>
+
                 </div>
 
             </section>

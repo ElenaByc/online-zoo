@@ -25,6 +25,7 @@
     --color-gray-dark: #404950;
     --color-gray: #BDBDBD;
     --color-gray2: #72828E;
+    --color-gray3: #929699;
     --color-yellow: #FFEE2E;
     --color-orange1: #F9804B;
     --color-orange2: #FE9013;
@@ -94,6 +95,10 @@ h5 {
     text-align: center;
     text-transform: uppercase;
     color: var(--color-white);
+}
+
+.button.rounded {
+    border-radius: 25px;
 }
 
 .button:hover {
