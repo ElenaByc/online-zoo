@@ -196,7 +196,13 @@
     width: 72px;
     display: flex;
     justify-content: center;
+    align-items: center;
     column-gap: 2px;
+}
+
+.amount__values label img {
+    width: 10px;
+    height: 20px;
 }
 
 .amount__value {
@@ -216,6 +222,16 @@
     align-items: center;
 }
 
+.amount__form input::-webkit-outer-spin-button,
+.amount__form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.amount__form input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .amount__input {
     display: block;
     width: 268px;
@@ -223,7 +239,6 @@
     border: 2px solid var(--color-gray3);
     border-radius: 2px;
     appearance: none;
-    -moz-appearance: textfield;
     outline: none;
     line-height: 140%;
     color: var(--color-gray3);

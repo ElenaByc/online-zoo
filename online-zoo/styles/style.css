@@ -240,13 +240,49 @@ h5 {
 /* ---------- Watch your favorite animal online ---------- */
 
 .watch {
+    background-image: url(../assets/images/giant_panda.jpg);
+    background-repeat: no-repeat;
+    background-position: center -80px;
+    background-size: 1600px 780px;
     height: 700px;
 }
 
-.watch h2 {
-    font-size: 26px;
-    line-height: 40px;
-    color: var(--color-black);
+.watch__content {
+    margin-left: 665px;
+    padding-top: 71px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 62px;
+}
+
+.watch__circle {
+    position: absolute;
+    top: -2px;
+    left: -79px;
+    background: linear-gradient(113.96deg, var(--color-orange1) 1.49%, var(--color-orange2) 101.44%);
+    width: 465px;
+    height: 465px;
+    border-radius: 50%;
+}
+
+.watch__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Bold';
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-white);
+    z-index: 1;
+}
+
+.watch__title span {
+    color: var(--color-yellow);
 }
 
 /* ---------- The Backstage ---------- */
